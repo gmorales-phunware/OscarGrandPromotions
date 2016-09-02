@@ -1,0 +1,15 @@
+<div class = "well">
+<%= form_for(@promotion) do |f| %>
+    <%= f.label :title %><br/>
+    <%= f.text_field :title %><br/><br/>
+    <%= f.label :title_arabic %><br/>
+    <%= f.text_field :title_arabic %><br/><br/>
+    <%= f.label :price %><br/>
+    <%= f.text_field :price %><br/><br/>
+    <%= f.label :price_arabic %><br/>
+    <%= f.text_field :price_arabic %><br/><br/>
+    <%= f.label :imageURL %><br/>
+    <%= f.text_field :imageURL %><br/><br/>
+    <%= f.submit class: "btn btn-primary" %>
+<% end %>
+</div>

@@ -1,0 +1,47 @@
+  <% if @promotion.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@promotion.errors.count, "error") %> prohibited this promotion from being saved:</h2>
+
+      <ul>
+      <% @promotion.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <% if !flash[:notice].blank? %>
+   <div class = "alert alert-success">
+      <%= flash[:notice] %>
+   </div>
+<% end %>
+
+<!-- <p class="bg-success" id="notice"><%= notice %></p> -->
+
+<p>
+  <strong>Title:</strong>
+  <%= @promotion.title %>
+</p>
+
+<p>
+  <strong>Title Arabic:</strong>
+  <%= @promotion.title_arabic %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @promotion.price %>
+</p>
+
+<p>
+  <strong>Price Arabic:</strong>
+  <%= @promotion.price_arabic %>
+</p>
+
+<p>
+  <strong>Imageurl:</strong>
+  <%= @promotion.imageURL %>
+</p>
+
+<%= link_to 'Edit', edit_promotion_path(@promotion), class: "btn btn-primary" %> |
+<%= link_to 'Back', promotions_path, class: "btn btn-primary" %>
