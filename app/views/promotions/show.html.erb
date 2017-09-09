@@ -43,5 +43,10 @@
   <%= @promotion.imageURL %>
 </p>
 
+<p>
+  <strong>Weekend Promotion:</strong>
+  <%= @promotion.weekendPromotion %>
+</p>
+
 <%= link_to 'Edit', edit_promotion_path(@promotion), class: "btn btn-primary" %> |
 <%= link_to 'Back', promotions_path, class: "btn btn-primary" %>
