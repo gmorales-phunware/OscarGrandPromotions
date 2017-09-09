@@ -6,6 +6,7 @@ class CreatePromotions < ActiveRecord::Migration
       t.string :price
       t.string :price_arabic
       t.string :imageURL
+      t.boolean :weekendPromotion
 
       t.timestamps
     end
