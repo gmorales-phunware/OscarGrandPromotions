@@ -28,6 +28,7 @@ ActiveRecord::Schema.define(version: 20160825200730) do
     t.string   "price"
     t.string   "price_arabic"
     t.string   "imageURL"
+    t.boolean  "weekendPromotion"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
